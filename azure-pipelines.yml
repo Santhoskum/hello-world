@@ -23,4 +23,4 @@ stages:
       displayName: JobB
       steps:
         - script: echo Job B
-  condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/new'))
+  condition: and(succeeded(), eq(variables['build.sourceBranch'], 'refs/heads/master'))
